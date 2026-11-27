@@ -1305,6 +1305,30 @@ describe('Artifacts Endpoints (e2e)', () => {
       expect(res.headers['accept-ranges']).toBe('bytes');
     });
 
+    it('clamps a Range end past the end of the file and answers 206', async () => {
+      const fileStorage = testApp.app.get(FileStorageService);
+      const data = Buffer.from('0123456789ABCDEFGHIJKLMNOPQRSTUV');
+      const stored = await fileStorage.write('artifacts', data);
+      const artifact = testApp.fixtures.createArtifact({
+        title: 'ThirtyTwo.txt',
+        type: 'file',
+        content: null,
+        file_path: stored.reference,
+        mime_type: 'text/plain',
+      });
+
+      // A downloader that asks for a fixed 1 MiB first chunk of a 32-byte file
+      const res = await testApp
+        .request()
+        .get(`/api/v1/artifacts/${artifact.id}/content`)
+        .set('Range', 'bytes=10-1048575')
+        .expect(206);
+
+      expect(res.text).toBe('ABCDEFGHIJKLMNOPQRSTUV');
+      expect(res.headers['content-range']).toBe(`bytes 10-31/${data.length}`);
+      expect(res.headers['content-length']).toBe('22');
+    });
+
     it('returns 416 Range Not Satisfiable when requested range is out of bounds', async () => {
       const fileStorage = testApp.app.get(FileStorageService);
       const data = Buffer.from('Short data');

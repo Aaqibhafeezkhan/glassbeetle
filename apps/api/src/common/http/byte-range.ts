@@ -55,7 +55,9 @@ export function parseRangeHeader(
   } else {
     // Explicit range: bytes=N-M
     start = parseInt(startStr, 10);
-    end = parseInt(endStr, 10);
+    // RFC 9110 14.1.2: a last-byte-pos at or past the end of the content is
+    // read as the remainder of the content, not as unsatisfiable.
+    end = Math.min(parseInt(endStr, 10), totalSize - 1);
   }
 
   if (
@@ -63,8 +65,7 @@ export function parseRangeHeader(
     isNaN(end) ||
     start < 0 ||
     start > end ||
-    start >= totalSize ||
-    end >= totalSize
+    start >= totalSize
   ) {
     return 'unsatisfiable';
   }
