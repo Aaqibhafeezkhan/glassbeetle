@@ -25,7 +25,7 @@ the `question` label.
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-24-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-25-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Maintained by the [all-contributors](https://allcontributors.org) bot. Emoji
@@ -68,6 +68,7 @@ each one means.
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/gauravchahal20"><img src="https://avatars.githubusercontent.com/u/183644790?v=4&size=100" width="100px" height="100px" alt="Gaurav Chahal"/><br /><sub><b>Gaurav Chahal</b></sub></a><br /><a href="https://github.com/Open-Glassbeetle/glassbeetle/commits?author=gauravchahal20" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://aaqibhafeezkhan.github.io/aaqibhafeezkhan.cv/"><img src="https://avatars.githubusercontent.com/u/292322256?v=4&size=100" width="100px" height="100px" alt="Aaqibhafeez Khan"/><br /><sub><b>Aaqibhafeez Khan</b></sub></a><br /><a href="#infra-Aaqibhafeezkhan" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://antonpetnitsky.com"><img src="https://avatars.githubusercontent.com/u/168552591?v=4&size=100" width="100px" height="100px" alt="Anton Petnitsky"/><br /><sub><b>Anton Petnitsky</b></sub></a><br /><a href="https://github.com/Open-Glassbeetle/glassbeetle/commits?author=Mukller" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://ziadtaham.github.io/ziad-taha-portfolio"><img src="https://avatars.githubusercontent.com/u/138917054?v=4&size=100" width="100px" height="100px" alt="Ziad Taha"/><br /><sub><b>Ziad Taha</b></sub></a><br /><a href="https://github.com/Open-Glassbeetle/glassbeetle/commits?author=ZiadtahaM" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
