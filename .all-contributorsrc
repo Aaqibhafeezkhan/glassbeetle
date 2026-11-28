@@ -231,6 +231,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ZiadtahaM",
+      "name": "Ziad Taha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138917054?v=4",
+      "profile": "https://ziadtaham.github.io/ziad-taha-portfolio",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs",
